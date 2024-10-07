@@ -4,3 +4,5 @@ c = 10
 
 if a > b:
     print("a>b")
+elif b>a:
+    print("a<b")
