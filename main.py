@@ -1,7 +1,7 @@
-for i in range(8):
-    print("word")
+a = 7 # создание переменной
+b = 9
+c = 10
 
-a, b = 9, 8
 if a > b:
     print("a>b")
 elif b>a:
