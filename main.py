@@ -1,14 +1,30 @@
+class Warrior():
 
-a = 7 # создание переменной
-b = 9
-c = 10
+    def __init__(self, name, power, endurance, hair_color):
+        self.name = name
+        self.power = power
+        self.endurance = endurance
+        self.hair_color = hair_color
 
-if a > b:
-    print("a>b")
-elif b>a:
-    print("a<b")
-else:
-    print("a=b")
+    def sleep(self):
+        print(f"Человек {self.name} сейчас спит")
+        self.endurance += 2
 
-print("I am in conflict")
+    def eat(self):
+        print(f"Человек {self.name} кушает")
+        self.power += 1
+
+    def hit(self):
+        print(f"Человек {self.name} бьет кого-то")
+        self.endurance -= 6
+
+    def walk(self):
+        print(f"Человек {self.name} гулет")
+
+    def info(self):
+        print(f"Имя воина - {self.name}")
+        print(f"Сила воина - {self.power}")
+        print(f"Цвет волос воина - {self.hair_color}")
+        print(f"ВЫносливость воина - {self.endurance}")
+
 
